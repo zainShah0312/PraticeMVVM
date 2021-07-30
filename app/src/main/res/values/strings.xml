@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">KotlinMvvmPratice</string>
+    <!-- activity_login.xml -->
+    <string name="et_login_phone_hint" translatable="false">Mobile Number (Required)</string>
+    <string name="tv_login_email" translatable="false">ID Number</string>
+    <string name="tv_login_password" translatable="false">Password (Required)</string>
+    <string name="btn_login" translatable="false">Login</string>
+    <string name="btn_send" translatable="false">Send</string>
+    <string name="tv_login_note" translatable="false">Before continue with application you must verify your mobile number. Our system will sent you OTP code on registered mobile number</string>
+    <string name="btn_signin" translatable="false">Sign in</string>
+    <string name="assign_ord_de" translatable="false">Assign Order To Delivered</string>
+    <string name="tv_login_header_msg" translatable="false">Please enter your email and password \nto sign in. </string>
+    <string name="no_internet">No Internet Connection</string>
+</resources>
