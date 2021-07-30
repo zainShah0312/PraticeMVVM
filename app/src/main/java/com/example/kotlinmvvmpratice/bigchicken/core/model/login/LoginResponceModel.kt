@@ -8,7 +8,7 @@ import android.os.Parcelable
 
 @SuppressLint("ParcelCreator")
 @Parcelize
-data class loginResponceModel(
+data class LoginResponceModel(
     @SerializedName("error")
     var error: Int = 0,
     @SerializedName("success")

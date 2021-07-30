@@ -5,8 +5,10 @@ import android.os.Bundle
 import com.example.kotlinmvvmpratice.R
 import com.example.kotlinmvvmpratice.bigchicken.core.`interface`.LoginListener
 import com.example.kotlinmvvmpratice.databinding.ActivityLoginBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-class LoginActivity : AppCompatActivity() , LoginListener{
+@AndroidEntryPoint
+class LoginActivity : AppCompatActivity(){
 
     lateinit var binding: ActivityLoginBinding
 
@@ -18,7 +20,7 @@ class LoginActivity : AppCompatActivity() , LoginListener{
 
     }
 
-    override fun onStarted() {
+  /*  override fun onStarted() {
 
     }
 
@@ -28,5 +30,5 @@ class LoginActivity : AppCompatActivity() , LoginListener{
 
     override fun onFailure(message: String) {
 
-    }
+    }*/
 }

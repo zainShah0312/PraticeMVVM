@@ -5,12 +5,16 @@ import com.example.kotlinmvvmpratice.bigchicken.data.remote.RemoteDataSource
 import com.example.kotlinmvvmpratice.bigchicken.data.remote.performGetOperation
 import javax.inject.Inject
 
-class userRepository @Inject constructor(
+class UserRepository @Inject constructor(
     private val remoteDataSource: RemoteDataSource,
 ) {
-    fun loginUserApi(model: UserModel) =
+    fun authTokenApi(userModel: UserModel) =
+        performGetOperation(
+            networkCall = { remoteDataSource.userLogin(userModel)}
+        )
+    /*fun loginUserApi(model: UserModel) =
         performGetOperation(
             networkCall = { remoteDataSource.userLogin(model)}
-        )
+        )*/
 
 }

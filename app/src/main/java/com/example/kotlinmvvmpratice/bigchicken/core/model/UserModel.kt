@@ -16,6 +16,4 @@ data class UserModel(
     @SerializedName("token")
     @Expose
     var token: String?
-
-
 )

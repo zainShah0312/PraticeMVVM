@@ -8,7 +8,7 @@ import kotlinx.coroutines.Dispatchers
 
 
 fun <T> performGetOperation(
-    networkCall: suspend () -> com.example.kotlinmvvmpratice.bigchicken.utils.Resource<T>,
+    networkCall: suspend () -> Resource<T>,
 ): LiveData<Resource<T>> =
     liveData(Dispatchers.IO) {
         emit(Resource.loading())

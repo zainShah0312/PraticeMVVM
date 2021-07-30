@@ -13,9 +13,7 @@ import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast
 import javax.inject.Inject
 
-@AndroidEntryPoint
 class SplashActivity : AppCompatActivity() {
-    @Inject
     lateinit var someString: String
     private var coroutineScope: Job? = null
     private var NAVIGATION_DELAY = 1 * 1000L

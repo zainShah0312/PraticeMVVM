@@ -5,9 +5,10 @@ import com.example.kotlinmvvmpratice.bigchicken.utils.SessionManagement
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
-class BaseApplication :Application() {
+class BaseApplication : Application() {
     private val TAG = Application::class.simpleName
-    companion object{
+
+    companion object {
         lateinit var instance: Application
         lateinit var sessionManagement: SessionManagement
     }
@@ -16,8 +17,8 @@ class BaseApplication :Application() {
         super.onCreate()
         initialize()
     }
-    private fun initialize()
-    {
+
+    private fun initialize() {
         instance = this
         sessionManagement = SessionManagement(applicationContext)
     }
